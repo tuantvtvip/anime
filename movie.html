@@ -1,0 +1,1306 @@
+<html lang="vi">
+ <head>
+  <style type="text/css" id="alertifyCSS">.alertify-logs>*{padding:12px 24px;color:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,.2);border-radius:1px}.alertify-logs>*,.alertify-logs>.default{background:rgba(0,0,0,.8)}.alertify-logs>.error{background:rgba(244,67,54,.8)}.alertify-logs>.success{background:rgba(76,175,80,.9)}.alertify{position:fixed;background-color:rgba(0,0,0,.3);left:0;right:0;top:0;bottom:0;width:100%;height:100%;z-index:1}.alertify.hide{opacity:0;pointer-events:none}.alertify,.alertify.show{box-sizing:border-box;transition:all .33s cubic-bezier(.25,.8,.25,1)}.alertify,.alertify *{box-sizing:border-box}.alertify .dialog{padding:12px}.alertify .alert,.alertify .dialog{width:100%;margin:0 auto;position:relative;top:50%;transform:translateY(-50%)}.alertify .alert>*,.alertify .dialog>*{width:400px;max-width:95%;margin:0 auto;text-align:center;padding:12px;background:#fff;box-shadow:0 2px 4px -1px rgba(0,0,0,.14),0 4px 5px 0 rgba(0,0,0,.098),0 1px 10px 0 rgba(0,0,0,.084)}.alertify .alert .msg,.alertify .dialog .msg{padding:12px;margin-bottom:12px;margin:0;text-align:left}.alertify .alert input:not(.form-control),.alertify .dialog input:not(.form-control){margin-bottom:15px;width:100%;font-size:100%;padding:12px}.alertify .alert input:not(.form-control):focus,.alertify .dialog input:not(.form-control):focus{outline-offset:-2px}.alertify .alert nav,.alertify .dialog nav{text-align:right}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button),.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button){background:transparent;box-sizing:border-box;color:rgba(0,0,0,.87);position:relative;outline:0;border:0;display:inline-block;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center;padding:0 6px;margin:6px 8px;line-height:36px;min-height:36px;white-space:nowrap;min-width:88px;text-align:center;text-transform:uppercase;font-size:14px;text-decoration:none;cursor:pointer;border:1px solid transparent;border-radius:2px}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active,.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover{background-color:rgba(0,0,0,.05)}.alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):focus,.alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):focus{border:1px solid rgba(0,0,0,.1)}.alertify .alert nav button.btn,.alertify .dialog nav button.btn{margin:6px 4px}.alertify-logs{position:fixed;z-index:1}.alertify-logs.bottom,.alertify-logs:not(.top){bottom:16px}.alertify-logs.left,.alertify-logs:not(.right){left:16px}.alertify-logs.left>*,.alertify-logs:not(.right)>*{float:left;transform:translateZ(0);height:auto}.alertify-logs.left>.show,.alertify-logs:not(.right)>.show{left:0}.alertify-logs.left>*,.alertify-logs.left>.hide,.alertify-logs:not(.right)>*,.alertify-logs:not(.right)>.hide{left:-110%}.alertify-logs.right{right:16px}.alertify-logs.right>*{float:right;transform:translateZ(0)}.alertify-logs.right>.show{right:0;opacity:1}.alertify-logs.right>*,.alertify-logs.right>.hide{right:-110%;opacity:0}.alertify-logs.top{top:0}.alertify-logs>*{box-sizing:border-box;transition:all .4s cubic-bezier(.25,.8,.25,1);position:relative;clear:both;backface-visibility:hidden;perspective:1000;max-height:0;margin:0;padding:0;overflow:hidden;opacity:0;pointer-events:none}.alertify-logs>.show{margin-top:12px;opacity:1;max-height:1000px;padding:12px;pointer-events:auto}
+ 
+  </style> 
+      <style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #eb3b17;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #eb3b17;
+  cursor: pointer;
+}
+.buttonslide {
+  background: #eb3b17; 
+  border: none;
+  color: white;
+/*  padding: 20px 500px;*/
+width: 100%;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 27px;
+  cursor: pointer;
+}
+.buttonslide:active {
+  background: #eb3b17;
+}
+.btnshare {
+  background: #eb3b17; /* Green */
+  border: none;
+  color: white;
+/*  padding: 20px 500px;*/
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 27px;
+  
+}
+
+
+.button__text {
+  font: bold 20px "Quicksand", san-serif;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+textarea{
+         opacity: 0;
+  position: absolute;
+  z-index: -9999;
+  pointer-events: none;
+    }
+</style>
+  <title>Top Anime Online</title> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> 
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta http-equiv="cache-control" content="max-age=0"> 
+  <meta http-equiv="cache-control" content="no-cache"> 
+  <meta name="robots" content="index, follow"> 
+  <meta name="language" content="Vietnamese, English"> 
+  <meta name="theme-color" content="#d80f16"> 
+ 
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dgljegdch/image/upload/v1671544622/20221220205620_zgpvqs.png" type="https://res.cloudinary.com/dgljegdch/image/upload/v1671544622/20221220205620_zgpvqs.png"> 
+    <meta itemprop="name" content="Top Anime Online"> 
+  <!-- Facebook Metadata /--> 
+
+  <!-- Google webmaster tools verification --> 
+
+  <!-- Bing verification --> 
+
+ <link rel="stylesheet" href="https://vuighe.net/css/simple/film.css?id=c69865ce2e8d3decf5ea"> 
+   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index2.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ </head> 
+ <body onload="start()"> 
+  <header> 
+    <nav class="navbar"> 
+    <div class="navbar-container"> 
+     <div class="navbar-header"> 
+      <div class="navbar-brand tet"> 
+       <a class="logo" href="index.html"> <img src="https://res.cloudinary.com/dgljegdch/image/upload/v1670682904/IMG_20221210_213417_ijgvb8.png" alt="TOP ANIME"> </a> 
+      </div> 
+   <!-- <div class="navbar-menu-toggle" id="navbar-toggle"> 
+       <i class="icon-menu"></i> 
+      </div> -->
+    <div class="navbar-header-user"> 
+<!--<div class="user-theme hidden-320" id="user-theme"> 
+        <i class="icon-sunny"></i> 
+       </div> -->
+              <div class="user-tos" id="user-tos"> 
+<a href="index.html"/><svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -120 810 810" class="icon-information"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+<path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+
+</svg> 
+</div> 
+
+
+   <div class="user-tos" id="user-tos"> <a href="fim.html"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-160 -170 810 810"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM48 368v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H416zM48 240v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H416zM48 112v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zM416 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H416zM160 128v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H192c-17.7 0-32 14.3-32 32zm32 160c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V320c0-17.7-14.3-32-32-32H192z"/></svg>
+   </div>
+   <div class="user-tos" id="user-tos" > <a href="anime.html">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-125 -171 810 810" class="icon-information"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. ICON YTB -->
+<path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+</svg>   </a> </div> 
+       
+      </div> 
+     </div> 
+ <!--    <div class="navbar-right" id="navbar-right"> 
+      </div> 
+      <div class="navbar-user-body tab-login" style="max-height: 583px; overflow: auto;"> 
+
+      </div> 
+      <div class="loading hidden"></div> 
+      <div class="navbar-close"> 
+       <i class="icon-close"></i> 
+      </div> -->
+     </div> 
+    </div> 
+   </nav> 
+  </header> 
+  <div class="player-container"> 
+   <div class="masthead banner-masthead"> 
+   </div> 
+   <div class="player-container-bg"></div> 
+   <div class="player-wrapper"> 
+    <div class="player-main"> 
+    
+    <div class="player player-waiting">
+   <!-- <iframe class="player-video" id="myVideo"
+    src="https://res.cloudinary.com/dgljegdch/video/upload/v1665913692/L%C3%A0m_nhi%E1%BB%85u_s%C3%B3ng_wifi_b%E1%BA%B1ng_module_esp8266_A_-_Z__jammer_wifi_ccjugv.mp4" allowTransparency="true" frameborder="0" controls controlsList="nodownload"></iframe> -->
+  
+        <video class="player-video" controls  controlsList="nodownload"
+     playsinline muted loop oncontextmenu="return false;" id="fimmovie">
+  <source  type="video/mp4">
+  <source  type="video/ogg">
+</video>
+   </div>
+          <style>
+    .loading-center{
+      align-items: center;
+  background-color: white;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 0;
+    }
+.loader {
+  width: 60px;
+}
+
+.loader-wheel {
+  animation: spin 1s infinite linear;
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  border-left: 4px solid #000000;
+  border-radius: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.loader-text {
+  color: #000000;
+  font-family: arial, sans-serif;
+}
+
+.loader-text:after {
+  content: 'Loading';
+  animation: load 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  0% {
+    content: 'Loading';
+  }
+  33% {
+    content: 'Loading.';
+  }
+  67% {
+    content: 'Loading..';
+  }
+  100% {
+    content: 'Loading...';
+  }
+}
+    </style>
+     <div class="loading-center" id="loading-center">
+     <div class="loader">
+  <div class="loader-wheel"></div>
+  <div class="loader-text"></div>
+</div>
+</div>
+     <div class="player-meta"> 
+      <h1 class="film-info-title" id="namemovie"></h1> 
+       <textarea id="textarea"></textarea>
+      <div class="film-info-views"> 
+       <span id="viewmovie"></span> <br/>
+       <h3>Lưu Ý: Vui lòng chờ 3-5s để lấy video từ máy chủ. Mở chế độ xoay màn hình để mở full video khi xem.</h3> 
+      </div> 
+      <div class="film-info-action"> 
+    <!--   <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank"> 
+        <div class="film-info-share"> 
+         <i class="icon icon-share"></i> 
+         <span>Share</span> 
+        </div> </a> -->
+       <div class="film-info-like" style="background: white;" > 
+        <i class="icon icon-action"></i> 
+    <!--    <span class="film-like-label" style="color: black;">thích</span> 
+        <span class="count-box" style="color: black;" >SHARE MOVIE</span> -->
+        <button class="btnshare" onclick="copy()">SHARE</button>
+        
+       </div> 
+    <!--   <div class="film-info-follow" data-following="0"> 
+        <i class="icon icon-action  icon-notifications-none "></i> 
+        <span class="film-follow-label">theo dõi</span> 
+        <span class="count-box">0</span> 
+       </div> -->
+      </div> 
+     </div> 
+    </div> 
+   
+    <div class="player-sidebar"> 
+     <div class="player-sidebar-header  "> 
+      <div class="tab-item tab-episode activated ">
+       Danh sách tập
+      </div> 
+      <div class="tab-item tab-episode activated">
+       <span>Review Phim</span>
+   <!--    <i class="icon icon-iicon-information-->
+      </div> 
+     </div> 
+
+      <div class="episode-list ps-container ps-theme-default" data-ps-id="89c3ad15-6ce9-6285-32e7-195d53f5d61d">
+       <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+        <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+       </div>
+       <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+        <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 1000px;"></div>
+       </div>
+         <!-- hiện 4 cái danh sách tập-->
+      </div> 
+      <div class="ova-list hidden ps-container ps-theme-default" data-ps-id="b3c727bb-a75f-0a72-ec3a-217fcb2aef93">
+       <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+        <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+       </div>
+       <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+        <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+       </div>
+      </div> 
+      <div class="video-list hidden"></div> 
+     </div> 
+
+    </div> 
+   </div> 
+  </div> 
+  <div class="container play"> 
+   <div class="film-content"> 
+    <div class="film-info"> 
+     <div class="film-info-genre">
+        <p id="motamovie"></p> 
+     </div> 
+   <!--  <div class="film-info-subteam">
+       Nhóm sub: 
+      <a href="https://fdcvteam.blogspot.com/" rel="nofollow" target="_blank">FDCV</a>,&nbsp; 
+      <a href="https://phim1080z.me/" rel="nofollow" target="_blank">Phim1080</a> 
+     </div> 
+     <div class="film-info-genre">
+      Tổng số tập: 99 tập
+     </div> 
+     <div class="film-info-genre">
+       Bộ sưu tập: 
+      <a href="/bo-suu-tap/anime-phieu-luu-hay-nhat" target="_blank">Anime phiêu lưu hay nhất</a> 
+     </div> 
+     <div class="film-info-description"> 
+      <p>Tổng hợp toàn bộ Movie của Conan từ trước đến hiện nay.</p>
+      <p><span style="letter-spacing: 0.1px; font-size: 13px; line-height: 1.84615;">Câu chuyện xoay quanh, nhiều vụ án mà và Conan phải giải quyết nó.</span><br></p> 
+     </div> 
+  <!--   <div class="film-info-tag"> 
+      <span>Conan The Movie</span> 
+      <span>Conan The Movie Vietsub</span> 
+      <span>Conan The Movie HD</span> &nbsp; 
+      <span>tập 25</span> 
+      <span>Conan The Movie tập mới nhất</span> 
+     </div> -->
+     <div class="film-info-tag"> 
+    <h2 id="ltmovietext"></h2>
+     </div> 
+     <div id="fanpagemovie">
+   <div class="episode-item episode-125046"><a  onclick="namefanpage1()"><div class="episode-item-thumbnail"><img id="imgfanpage1"></div><div class="episode-item-meta"><div class="episode-item-title" id="namefanpage1"></div><div class="episode-item-views" id="viewfanpage1"></div></div></a>
+      </div>
+      
+ <div class="episode-item episode-125046"><a onclick="namefanpage2()"><div class="episode-item-thumbnail"><img id="imgfanpage2"></div><div class="episode-item-meta"><div class="episode-item-title" id="namefanpage2"></div><div class="episode-item-views" id="viewfanpage2"></div></div></a>
+      </div>
+      
+  <div class="episode-item episode-125046"><a onclick="namefanpage3()"><div class="episode-item-thumbnail"><img id="imgfanpage3"></div><div class="episode-item-meta"><div class="episode-item-title" id="namefanpage3"></div><div class="episode-item-views" id="viewfanpage3"></div></div></a>
+      </div>
+      
+  <div class="episode-item episode-125046"><a onclick="namefanpage4()"><div class="episode-item-thumbnail"><img id="imgfanpage4"></div><div class="episode-item-meta"><div class="episode-item-title" id="namefanpage4"></div><div class="episode-item-views" id="viewfanpage4"></div></div></a>
+      </div>
+      
+ <div class="episode-item episode-125046"><a  onclick="namefanpage5()"><div class="episode-item-thumbnail"><img id="imgfanpage5"></div><div class="episode-item-meta"><div class="episode-item-title" id="namefanpage5"></div><div class="episode-item-views" id="viewfanpage5"></div></div></a>
+      </div>
+      
+ <div class="episode-item episode-125046"><a  onclick="namefanpage6()"><div class="episode-item-thumbnail"><img id="imgfanpage6"></div><div class="episode-item-meta"><div class="episode-item-title" id="namefanpage6"></div><div class="episode-item-views" id="viewfanpage6"></div></div></a>
+      </div></br>
+    
+<div class="slidecontainer">
+  <input type="range" min="1" max="1" value="1" class="slider" id="myRange">
+  <p>Chuyển trang: <span id="demo2"></span></p>
+</div>
+<button class="buttonslide" onclick="myFunction()" id="nextfanpage">
+   <span class="button__text">Next!!!</span></button>
+   </div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo2");
+output.innerHTML = slider.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  localStorage.setItem("myRangeht",this.value);
+}
+</script>
+    </div> 
+   </div> 
+  
+  
+    
+   <section class="tray cartoon" data-type="ajax" data-block="cartoon"> 
+    <div class="tray-title"> 
+     <a ><h2>Phim Hoạt Hình</h2> <i class=""></i></a> 
+    </div> 
+    <div class="tray-content">
+     <div class="tray-item">
+      <a onclick="hhname1()" target="_blank"><img class="tray-item-thumbnail" id="hhimg1">
+       <div class="tray-item-description">
+        <div class="tray-item-title" id="hhname1">
+         
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hhview1">
+         
+         </div>
+        </div>
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hhname2()"target="_blank"><img class="tray-item-thumbnail" id="hhimg2">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hhname2">
+         
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views" id="hhview2">
+         </div>
+        </div>
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hhname3()"target="_blank"><img class="tray-item-thumbnail" id="hhimg3">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hhname3">
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hhview3">
+         </div>
+        </div>
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hhname4()" target="_blank"><img class="tray-item-thumbnail" id="hhimg4">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hhname4">
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hhview4">
+         </div>
+        </div>
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hhname5()"target="_blank"><img class="tray-item-thumbnail" id="hhimg5">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hhname5">
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hhview5">
+         </div>
+        </div>
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hhname6()" target="_blank"><img class="tray-item-thumbnail" id="hhimg6">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hhname6">
+
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hhview6">
+         </div>
+        </div>
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+    </div> 
+   </section> 
+   <!-- 
+   
+   
+   
+   
+   
+   -->
+   
+   
+   
+   <section class="tray picked" data-type="ajax" data-block="picked"> 
+   <div class="tray-title"> 
+     <a><h2>Hôm Nay Xem Gì</h2> <i class=""></i></a> 
+    </div> 
+    <div class="tray-content">
+     <div class="tray-item">
+      <a onclick="hnxgname1()"><img class="tray-item-thumbnail" id="hnxgimg1">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hnxgname1">
+         
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hnxgview1">
+          
+         </div>
+        </div>
+       </div>
+       <div class="tray-film-update">
+       
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hnxgname2()" ><img class="tray-item-thumbnail" id="hnxgimg2">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hnxgname2">
+         
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hnxgview2">
+          
+         </div>
+        </div>
+       </div>
+       <div class="tray-film-update">
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hnxgname3()"><img class="tray-item-thumbnail" id="hnxgimg3">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hnxgname3">
+         
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hnxgview3">
+         </div>
+        </div>
+       </div>
+       <div class="tray-film-update">
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hnxgname4()"><img class="tray-item-thumbnail" id="hnxgimg4">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hnxgname4">
+
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hnxgview4">
+         </div>
+        </div>
+       </div>
+       <div class="tray-film-update">
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hnxgname5()" ><img class="tray-item-thumbnail" id="hnxgimg5">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hnxgname5">
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hnxgview5">
+         </div>
+        </div>
+       </div>
+       <div class="tray-film-update">
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+     <div class="tray-item">
+      <a onclick="hnxgname6()"><img class="tray-item-thumbnail" id="hnxgimg6">
+       <div class="tray-item-description">
+        <div class="tray-item-title"id="hnxgname6">
+        </div>
+        <div class="tray-item-meta-info">
+         <div class="tray-film-views"id="hnxgview6">
+         </div>
+        </div>
+       </div>
+       <div class="tray-film-update">
+       </div>
+       <div class="tray-item-play-button">
+        <i class="icon-play"></i>
+       </div></a>
+     </div>
+
+    </div> 
+   </section> 
+  <div class="floating-action"> 
+<div class="action-item action-toggle" style="background: #ffffff;">
+    <a href="https://tuantvtvip.github.io/infotuantvt/">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-150 -150 810 810"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"/></svg>
+    </a>
+   </div> 
+  </div> 
+     <style>
+ .divbanquyen{
+  height: 100px;
+  width: 100%;
+  background-color:rgba(192,192,192,0.3);
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+       <div class="divbanquyen">
+         <p>Website Developed By tvt<p/>
+          <p> © Copyright 2022 Top Anime. All Rights Reserved.<p/></div>
+  <script>
+  console.log("2");
+  const parsedUrl = new URL(window.location.href);
+  const idlink=parsedUrl.searchParams.get("id");
+  console.log("text2"+idlink);
+  if (idlink==null||idlink==""||idlink=="undefined"||idlink==" null" ){
+    console.log("url not")
+  }else{
+localStorage.setItem("namemovie",idlink);
+console.log("url ok")
+}
+  </script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyB1d2RnWXRHSTS1qlZw4PeT8mxpH40k4rQ",
+  authDomain: "music-chill.firebaseapp.com",
+  databaseURL: "https://music-chill-default-rtdb.firebaseio.com",
+  projectId: "music-chill",
+  storageBucket: "music-chill.appspot.com",
+  messagingSenderId: "1003717395193",
+  appId: "1:1003717395193:web:a5367243d34afac9f81828"
+};
+firebase.initializeApp(firebaseConfig);
+// alert("Data Inserted");
+
+function start(){
+   const hhimg1 = localStorage.getItem("hhimg1");
+const hhname1 = localStorage.getItem("hhname1");
+const hhview1 = localStorage.getItem("hhview1");
+const hhlt1 = localStorage.getItem("hhlt1");
+
+ const hhimg2 = localStorage.getItem("hhimg2");
+ const hhname2= localStorage.getItem("hhname2");
+ const hhview2 = localStorage.getItem("hhview2");
+const hhlt2 = localStorage.getItem("hhlt2");
+ 
+const hhimg3 = localStorage.getItem("hhimg3");
+const hhname3= localStorage.getItem("hhname3");
+const hhview3= localStorage.getItem("hhview3");
+const hhlt3 = localStorage.getItem("hhlt3");
+ 
+ const hhimg4 = localStorage.getItem("hhimg4");
+const hhname4 = localStorage.getItem("hhname4");
+const hhview4 = localStorage.getItem("hhview4");
+const hhlt4 = localStorage.getItem("hhlt4");
+ 
+ const hhimg5 = localStorage.getItem("hhimg5");
+const hhname5 = localStorage.getItem("hhname5");
+const hhview5 = localStorage.getItem("hhview5");
+const hhlt5 = localStorage.getItem("hhlt5");
+ 
+const hhimg6 = localStorage.getItem("hhimg6");
+const hhname6= localStorage.getItem("hhname6");
+const hhview6= localStorage.getItem("hhview6");
+const hhlt6 = localStorage.getItem("hhlt6");
+ //////////HÔM NAY XEM GÌ//////
+ const hnxgimg1 = localStorage.getItem("hnxgimg1");
+const hnxgname1 = localStorage.getItem("hnxgname1");
+const hnxgview1 = localStorage.getItem("hnxgview1");
+const hnxglt1 = localStorage.getItem("hnxglt1");
+
+ const hnxgimg2 = localStorage.getItem("hnxgimg2");
+ const hnxgname2= localStorage.getItem("hnxgname2");
+ const hnxgview2 = localStorage.getItem("hnxgview2");
+const hnxglt2 = localStorage.getItem("hnxglt2");
+ 
+const hnxgimg3 = localStorage.getItem("hnxgimg3");
+const hnxgname3= localStorage.getItem("hnxgname3");
+const hnxgview3= localStorage.getItem("hnxgview3");
+const hnxglt3 = localStorage.getItem("hnxglt3");
+ 
+ const hnxgimg4 = localStorage.getItem("hnxgimg4");
+const hnxgname4 = localStorage.getItem("hnxgname4");
+const hnxgview4 = localStorage.getItem("hnxgview4");
+const hnxglt4 = localStorage.getItem("hnxglt4");
+ 
+ const hnxgimg5 = localStorage.getItem("hnxgimg5");
+const hnxgname5 = localStorage.getItem("hnxgname5");
+const hnxgview5 = localStorage.getItem("hnxgview5");
+const hnxglt5 = localStorage.getItem("hnxglt5");
+ 
+const hnxgimg6 = localStorage.getItem("hnxgimg6");
+const hnxgname6= localStorage.getItem("hnxgname6");
+const hnxgview6= localStorage.getItem("hnxgview6");
+const hnxglt6 = localStorage.getItem("hnxglt6");
+  const namemovie = localStorage.getItem("namemovie");
+  const postermovie = localStorage.getItem("postermovie");
+  const viewmovie = localStorage.getItem("viewmovie");
+const ltmovie = localStorage.getItem("ltmovie");
+//const parsedUrl = new URL(window.location.href);
+//console.log(parsedUrl.origin);
+  firebase
+    .database()
+    .ref("Top_Anime/All/" +namemovie)
+    .on("value", function (snap) {
+  
+     // document.getElementById("namemovie").value = snap.val().namemovie;
+      //document.getElementById("thuocphim").value = snap.val().theloai;
+  //  document.getElementById("url").value = snap.val().urlNo;
+   //  document.getElementById("mota").value = snap.val().mota;
+     // document.getElementById("view").value = snap.val().view;
+     localStorage.setItem("urlmovie",snap.val().urlNo);
+     localStorage.setItem("motamovie",snap.val().mota);
+     localStorage.setItem("postermovie2",snap.val().poster);
+     localStorage.setItem("ltmovie",snap.val().theloai);
+     
+    });
+    //////Fanpage////
+  firebase
+    .database()
+    .ref("Top_Anime/Movie_Fanpge/"+ltmovie+"/"+"1")
+    .on("value", function (snap) {
+      localStorage.setItem("fpgimg1",snap.val().fpgimg1);
+      localStorage.setItem("fpgname1",snap.val().fpgname1);
+      localStorage.setItem("fpgview1",snap.val().fpgview1);
+      localStorage.setItem("fpglt1",snap.val().fpglt1);
+      
+      localStorage.setItem("fpgimg2",snap.val().fpgimg2);
+      localStorage.setItem("fpgname2",snap.val().fpgname2);
+      localStorage.setItem("fpgview2",snap.val().fpgview2);
+      localStorage.setItem("fpglt2",snap.val().fpglt2);
+      
+            localStorage.setItem("fpgimg3",snap.val().fpgimg3);
+      localStorage.setItem("fpgname3",snap.val().fpgname3);
+      localStorage.setItem("fpgview3",snap.val().fpgview3);
+      localStorage.setItem("fpglt3",snap.val().fpglt3);
+      
+            localStorage.setItem("fpgimg4",snap.val().fpgimg4);
+      localStorage.setItem("fpgname4",snap.val().fpgname4);
+      localStorage.setItem("fpgview4",snap.val().fpgview4);
+      localStorage.setItem("fpglt4",snap.val().fpglt4);
+      
+            localStorage.setItem("fpgimg5",snap.val().fpgimg5);
+      localStorage.setItem("fpgname5",snap.val().fpgname5);
+      localStorage.setItem("fpgview5",snap.val().fpgview5);
+      localStorage.setItem("fpglt5",snap.val().fpglt5);
+      
+            localStorage.setItem("fpgimg6",snap.val().fpgimg6);
+      localStorage.setItem("fpgname6",snap.val().fpgname6);
+      localStorage.setItem("fpgview6",snap.val().fpgview6);
+      localStorage.setItem("fpglt6",snap.val().fpglt6);
+  //    document.getElementById("fpgimg1").value = snap.val().fpgimg1;
+  //    document.getElementById("fpgname1").value = snap.val().fpgname1;
+   //   document.getElementById("fpgview1").value = snap.val().fpgview1;
+    //  document.getElementById("fpglt1").value = snap.val().fpglt1;
+    });
+  firebase
+    .database()
+    .ref("Top_Anime/Movie_Fanpge_Max/"+ltmovie)
+    .on("value", function (snap) {
+    localStorage.setItem("myRange",snap.val().fanpagemax);
+    // document.getElementById("fanpage").value = snap.val().fanpagemax;
+    });
+    setTimeout(() => {
+  const ltmovie = localStorage.getItem("ltmovie");
+     document.getElementById("ltmovietext").innerHTML= ltmovie;
+     if(ltmovie=="" || ltmovie==" " || ltmovie=="null"|| ltmovie=="undefined"){
+       document.getElementById("fanpagemovie").style="display: none;";
+       
+     }
+      const urlmovie = localStorage.getItem("urlmovie");
+      const motamovie = localStorage.getItem("motamovie");
+      
+      const fpgimg1 = localStorage.getItem("fpgimg1");
+     const fpgname1 = localStorage.getItem("fpgname1");
+     const fpgview1 = localStorage.getItem("fpgview1");
+     const fpglt1 = localStorage.getItem("fpglt1");
+     
+      const fpgimg2 = localStorage.getItem("fpgimg2");
+     const fpgname2 = localStorage.getItem("fpgname2");
+     const fpgview2 = localStorage.getItem("fpgview2");
+     const fpglt2 = localStorage.getItem("fpglt2");
+     
+      const fpgimg3 = localStorage.getItem("fpgimg3");
+     const fpgname3 = localStorage.getItem("fpgname3");
+     const fpgview3= localStorage.getItem("fpgview3");
+     const fpglt3 = localStorage.getItem("fpglt1l3");
+     
+     const fpgimg4 = localStorage.getItem("fpgimg4");
+     const fpgname4 = localStorage.getItem("fpgname4");
+     const fpgview4 = localStorage.getItem("fpgview4");
+     const fpglt4 = localStorage.getItem("fpglt4");
+     
+      const fpgimg5 = localStorage.getItem("fpgimg5");
+     const fpgname5 = localStorage.getItem("fpgname5");
+     const fpgview5 = localStorage.getItem("fpgview5");
+     const fpglt5 = localStorage.getItem("fpglt5");
+     
+      const fpgimg6 = localStorage.getItem("fpgimg6");
+     const fpgname6 = localStorage.getItem("fpgname6");
+     const fpgview6= localStorage.getItem("fpgview6");
+     const fpglt6 = localStorage.getItem("fpglt1l6");
+     
+     
+     const myRangeMax= localStorage.getItem("myRange");
+      
+      const postermovie2 = localStorage.getItem("postermovie2");
+   document.getElementById("fimmovie").src = urlmovie;
+   document.getElementById("namemovie").innerHTML = namemovie;
+ const parsedUrl = new URL(window.location.href);
+   const namemoviesearh = namemovie.split(' ').join('+');
+
+   document.getElementById("textarea").innerHTML=parsedUrl.origin+"/movie.html?id="+namemoviesearh;
+  
+   document.getElementById("fimmovie").poster = postermovie2;
+   document.getElementById("motamovie").innerHTML= motamovie;
+   document.getElementById("viewmovie").innerHTML= viewmovie+" lượt xem";
+    /////Fanpage////
+    document.getElementById("imgfanpage1").src =  fpgimg1;
+document.getElementById("namefanpage1").innerHTML=  fpgname1;
+document.getElementById("viewfanpage1").innerHTML=  fpgview1+" lượt xem";
+
+document.getElementById("imgfanpage2").src =  fpgimg2;
+document.getElementById("namefanpage2").innerHTML=  fpgname2;
+document.getElementById("viewfanpage2").innerHTML=  fpgview2+" lượt xem";
+
+document.getElementById("imgfanpage3").src =  fpgimg3;
+document.getElementById("namefanpage3").innerHTML=  fpgname3;
+document.getElementById("viewfanpage3").innerHTML=  fpgview3+" lượt xem";
+
+document.getElementById("imgfanpage4").src =  fpgimg4;
+document.getElementById("namefanpage4").innerHTML=  fpgname4;
+document.getElementById("viewfanpage4").innerHTML=  fpgview4+" lượt xem";
+
+document.getElementById("imgfanpage5").src =  fpgimg5;
+document.getElementById("namefanpage5").innerHTML=  fpgname5;
+document.getElementById("viewfanpage5").innerHTML=  fpgview5+" lượt xem";
+
+document.getElementById("imgfanpage6").src =  fpgimg6;
+document.getElementById("namefanpage6").innerHTML=  fpgname6;
+document.getElementById("viewfanpage6").innerHTML=  fpgview6+" lượt xem";
+
+    ///////Hoạt Hình//////
+document.getElementById("hhimg1").src = hhimg1;
+document.getElementById("hhname1").innerHTML= hhname1;
+document.getElementById("hhview1").innerHTML= hhview1+" lượt xem";
+
+document.getElementById("hhimg2").src = hhimg2;
+document.getElementById("hhname2").innerHTML= hhname2;
+document.getElementById("hhview2").innerHTML= hhview2+" lượt xem";
+
+document.getElementById("hhimg3").src = hhimg3;
+document.getElementById("hhname3").innerHTML= hhname3;
+document.getElementById("hhview3").innerHTML= hhview3+" lượt xem";
+
+document.getElementById("hhimg4").src = hhimg4;
+document.getElementById("hhname4").innerHTML= hhname4;
+document.getElementById("hhview4").innerHTML= hhview4+" lượt xem";
+
+document.getElementById("hhimg5").src = hhimg5;
+document.getElementById("hhname5").innerHTML= hhname5;
+document.getElementById("hhview5").innerHTML= hhview5+" lượt xem";
+
+document.getElementById("hhimg6").src = hhimg6;
+document.getElementById("hhname6").innerHTML= hhname6;
+document.getElementById("hhview6").innerHTML= hhview6+" lượt xem";
+
+
+//////HÔM NAY XEM GÌ//////
+
+document.getElementById("hnxgimg1").src = hnxgimg1;
+document.getElementById("hnxgname1").innerHTML= hnxgname1;
+document.getElementById("hnxgview1").innerHTML= hnxgview1+" lượt xem";
+
+document.getElementById("hnxgimg2").src = hnxgimg2;
+document.getElementById("hnxgname2").innerHTML= hnxgname2;
+document.getElementById("hnxgview2").innerHTML= hnxgview2+" lượt xem";
+
+document.getElementById("hnxgimg3").src = hnxgimg3;
+document.getElementById("hnxgname3").innerHTML= hnxgname3;
+document.getElementById("hnxgview3").innerHTML= hnxgview3+" lượt xem";
+
+document.getElementById("hnxgimg4").src = hnxgimg4;
+document.getElementById("hnxgname4").innerHTML= hnxgname4;
+document.getElementById("hnxgview4").innerHTML= hnxgview4+" lượt xem";
+
+document.getElementById("hnxgimg5").src = hnxgimg5;
+document.getElementById("hnxgname5").innerHTML= hnxgname5;
+document.getElementById("hnxgview5").innerHTML= hnxgview5+" lượt xem";
+
+document.getElementById("hnxgimg6").src = hnxgimg6;
+document.getElementById("hnxgname6").innerHTML= hnxgname6;
+document.getElementById("hnxgview6").innerHTML= hnxgview6+" lượt xem";
+
+document.getElementById("myRange").max= myRangeMax;
+      
+      document.getElementById("loading-center").style="display: none;" ;
+
+
+    }, 2000) ///1000 = 1s
+};
+function namefanpage1(){
+  const namemovie = localStorage.getItem("fpgname1");
+  if (namemovie == ""||namemovie==" "||namemovie =="null"){
+    alert("Vui lòng chọn tập khác, ở đây không có phim !!!");
+  }else{
+  const postermovie = localStorage.getItem("fpgimg1");
+  const namemovie = localStorage.getItem("fpgname1");
+  const viewmovie = localStorage.getItem("fpgview1");
+const ltmovie = localStorage.getItem("fpglt1");
+    
+    localStorage.setItem("postermovie",postermovie);
+    localStorage.setItem("namemovie",namemovie);
+    localStorage.setItem("viewmovie",viewmovie);
+    localStorage.setItem("ltmovie",ltmovie);
+    location.href = "movie.html";
+  }
+};
+
+function namefanpage2(){
+  const namemovie = localStorage.getItem("fpgname2");
+  if (namemovie == ""||namemovie==" "||namemovie =="null"){
+    alert("Vui lòng chọn tập khác, ở đây không có phim !!!");
+  }else{
+  const postermovie = localStorage.getItem("fpgimg2");
+  const namemovie = localStorage.getItem("fpgname2");
+  const viewmovie = localStorage.getItem("fpgview2");
+const ltmovie = localStorage.getItem("fpglt2");
+    
+    localStorage.setItem("postermovie",postermovie);
+    localStorage.setItem("namemovie",namemovie);
+    localStorage.setItem("viewmovie",viewmovie);
+    localStorage.setItem("ltmovie",ltmovie);
+    location.href = "movie.html";
+  }
+};
+
+function namefanpage3(){
+  const namemovie = localStorage.getItem("fpgname3");
+  if (namemovie == ""||namemovie==" "||namemovie =="null"){
+    alert("Vui lòng chọn tập khác, ở đây không có phim !!!");
+  }else{
+  const postermovie = localStorage.getItem("fpgimg3");
+  const namemovie = localStorage.getItem("fpgname3");
+  const viewmovie = localStorage.getItem("fpgview3");
+const ltmovie = localStorage.getItem("fpglt3");
+    
+    localStorage.setItem("postermovie",postermovie);
+    localStorage.setItem("namemovie",namemovie);
+    localStorage.setItem("viewmovie",viewmovie);
+    localStorage.setItem("ltmovie",ltmovie);
+    location.href = "movie.html";
+  }
+};
+
+function namefanpage4(){
+  const namemovie = localStorage.getItem("fpgname4");
+  if (namemovie == ""||namemovie==" "||namemovie =="null"){
+    alert("Vui lòng chọn tập khác, ở đây không có phim !!!");
+  }else{
+  const postermovie = localStorage.getItem("fpgimg4");
+  const namemovie = localStorage.getItem("fpgname4");
+  const viewmovie = localStorage.getItem("fpgview4");
+const ltmovie = localStorage.getItem("fpglt4");
+    
+    localStorage.setItem("postermovie",postermovie);
+    localStorage.setItem("namemovie",namemovie);
+    localStorage.setItem("viewmovie",viewmovie);
+    localStorage.setItem("ltmovie",ltmovie);
+    location.href = "movie.html";
+  }
+};
+
+function namefanpage5(){
+  const namemovie = localStorage.getItem("fpgname5");
+  if (namemovie == ""||namemovie==" "||namemovie =="null"){
+    alert("Vui lòng chọn tập khác, ở đây không có phim !!!");
+  }else{
+  const postermovie = localStorage.getItem("fpgimg5");
+  const namemovie = localStorage.getItem("fpgname5");
+  const viewmovie = localStorage.getItem("fpgview5");
+const ltmovie = localStorage.getItem("fpglt5");
+    
+    localStorage.setItem("postermovie",postermovie);
+    localStorage.setItem("namemovie",namemovie);
+    localStorage.setItem("viewmovie",viewmovie);
+    localStorage.setItem("ltmovie",ltmovie);
+    location.href = "movie.html";
+  }
+};
+
+function namefanpage6(){
+  const namemovie = localStorage.getItem("fpgname6");
+  if (namemovie == ""||namemovie==" "||namemovie =="null"){
+    alert("Vui lòng chọn tập khác, ở đây không có phim !!!");
+  }else{
+  const postermovie = localStorage.getItem("fpgimg6");
+  const namemovie = localStorage.getItem("fpgname6");
+  const viewmovie = localStorage.getItem("fpgview6");
+const ltmovie = localStorage.getItem("fpglt6");
+    
+    localStorage.setItem("postermovie",postermovie);
+    localStorage.setItem("namemovie",namemovie);
+    localStorage.setItem("viewmovie",viewmovie);
+    localStorage.setItem("ltmovie",ltmovie);
+    location.href = "movie.html";
+  }
+};
+function myFunction() {
+  const btn = document.getElementById("nextfanpage")
+  btn.classList.add("button--loading");
+// const btn = document.querySelector(".button");
+
+// btn.classList.add("button--loading");
+// btn.classList.remove("button--loading");
+   const myRange= localStorage.getItem("myRangeht");
+   const ltmovie = localStorage.getItem("ltmovie");
+  firebase
+    .database()
+    .ref("Top_Anime/Movie_Fanpge/"+ltmovie+"/"+myRange)
+    .on("value", function (snap) {
+      localStorage.setItem("fpgimg1",snap.val().fpgimg1);
+      localStorage.setItem("fpgname1",snap.val().fpgname1);
+      localStorage.setItem("fpgview1",snap.val().fpgview1);
+      localStorage.setItem("fpglt1",snap.val().fpglt1);
+      
+       localStorage.setItem("fpgimg2",snap.val().fpgimg2);
+      localStorage.setItem("fpgname2",snap.val().fpgname2);
+      localStorage.setItem("fpgview2",snap.val().fpgview2);
+      localStorage.setItem("fpglt2",snap.val().fpglt2);
+      
+      localStorage.setItem("fpgimg3",snap.val().fpgimg3);
+      localStorage.setItem("fpgname3",snap.val().fpgname3);
+      localStorage.setItem("fpgview3",snap.val().fpgview3);
+      localStorage.setItem("fpglt3",snap.val().fpglt3);
+      
+            localStorage.setItem("fpgimg4",snap.val().fpgimg4);
+      localStorage.setItem("fpgname4",snap.val().fpgname4);
+      localStorage.setItem("fpgview4",snap.val().fpgview4);
+      localStorage.setItem("fpglt4",snap.val().fpglt4);
+      
+            localStorage.setItem("fpgimg5",snap.val().fpgimg5);
+      localStorage.setItem("fpgname5",snap.val().fpgname5);
+      localStorage.setItem("fpgview5",snap.val().fpgview5);
+      localStorage.setItem("fpglt5",snap.val().fpglt5);
+      
+            localStorage.setItem("fpgimg6",snap.val().fpgimg6);
+      localStorage.setItem("fpgname6",snap.val().fpgname6);
+      localStorage.setItem("fpgview6",snap.val().fpgview6);
+      localStorage.setItem("fpglt6",snap.val().fpglt6);
+    });
+
+    setTimeout(() => {
+    const fpgimg1 = localStorage.getItem("fpgimg1");
+     const fpgname1 = localStorage.getItem("fpgname1");
+     const fpgview1 = localStorage.getItem("fpgview1");
+     const fpglt1 = localStorage.getItem("fpglt1");
+     
+      const fpgimg2 = localStorage.getItem("fpgimg2");
+     const fpgname2 = localStorage.getItem("fpgname2");
+     const fpgview2 = localStorage.getItem("fpgview2");
+     const fpglt2 = localStorage.getItem("fpglt2");
+     
+      const fpgimg3 = localStorage.getItem("fpgimg3");
+     const fpgname3 = localStorage.getItem("fpgname3");
+     const fpgview3= localStorage.getItem("fpgview3");
+     const fpglt3 = localStorage.getItem("fpglt1l3");
+     
+     const fpgimg4 = localStorage.getItem("fpgimg4");
+     const fpgname4 = localStorage.getItem("fpgname4");
+     const fpgview4 = localStorage.getItem("fpgview4");
+     const fpglt4 = localStorage.getItem("fpglt4");
+     
+      const fpgimg5 = localStorage.getItem("fpgimg5");
+     const fpgname5 = localStorage.getItem("fpgname5");
+     const fpgview5 = localStorage.getItem("fpgview5");
+     const fpglt5 = localStorage.getItem("fpglt5");
+     
+      const fpgimg6 = localStorage.getItem("fpgimg6");
+     const fpgname6 = localStorage.getItem("fpgname6");
+     const fpgview6= localStorage.getItem("fpgview6");
+     const fpglt6 = localStorage.getItem("fpglt1l6");
+     
+          document.getElementById("imgfanpage1").src =  fpgimg1;
+document.getElementById("namefanpage1").innerHTML=  fpgname1;
+document.getElementById("viewfanpage1").innerHTML=  fpgview1+" lượt xem";
+
+document.getElementById("imgfanpage2").src =  fpgimg2;
+document.getElementById("namefanpage2").innerHTML=  fpgname2;
+document.getElementById("viewfanpage2").innerHTML=  fpgview2+" lượt xem";
+
+document.getElementById("imgfanpage3").src =  fpgimg3;
+document.getElementById("namefanpage3").innerHTML=  fpgname3;
+document.getElementById("viewfanpage3").innerHTML=  fpgview3+" lượt xem";
+
+document.getElementById("imgfanpage4").src =  fpgimg4;
+document.getElementById("namefanpage4").innerHTML=  fpgname4;
+document.getElementById("viewfanpage4").innerHTML=  fpgview4+" lượt xem";
+
+document.getElementById("imgfanpage5").src =  fpgimg5;
+document.getElementById("namefanpage5").innerHTML=  fpgname5;
+document.getElementById("viewfanpage5").innerHTML=  fpgview5+" lượt xem";
+
+document.getElementById("imgfanpage6").src =  fpgimg6;
+document.getElementById("namefanpage6").innerHTML=  fpgname6;
+document.getElementById("viewfanpage6").innerHTML=  fpgview6+" lượt xem";
+
+btn.classList.remove("button--loading");
+    }, 2000) ///1000 = 1s
+}
+
+function hhname1(){
+  const postermovie = localStorage.getItem("hhimg1");
+  const namemovie = localStorage.getItem("hhname1");
+  const viewmovie = localStorage.getItem("hhview1");
+const ltmovie = localStorage.getItem("hhlt1");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hhname2(){
+  const postermovie = localStorage.getItem("hhimg2");
+  const namemovie = localStorage.getItem("hhname2");
+  const viewmovie = localStorage.getItem("hhview2");
+const ltmovie = localStorage.getItem("hhlt2");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hhname3(){
+  const postermovie = localStorage.getItem("hhimg3");
+  const namemovie = localStorage.getItem("hhname3");
+  const viewmovie = localStorage.getItem("hhview3");
+const ltmovie = localStorage.getItem("hhlt3");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hhname4(){
+  const postermovie = localStorage.getItem("hhimg4");
+  const namemovie = localStorage.getItem("hhname4");
+  const viewmovie = localStorage.getItem("hhview4");
+const ltmovie = localStorage.getItem("hhlt4");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hhname5(){
+  const postermovie = localStorage.getItem("hhimg5");
+  const namemovie = localStorage.getItem("hhname5");
+  const viewmovie = localStorage.getItem("hhview5");
+const ltmovie = localStorage.getItem("hhlt5");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hhname6(){
+  const postermovie = localStorage.getItem("hhimg6");
+  const namemovie = localStorage.getItem("hhname6");
+  const viewmovie = localStorage.getItem("hhview6");
+const ltmovie = localStorage.getItem("hhlt6");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hnxgname1(){
+  const postermovie = localStorage.getItem("hnxgimg1");
+  const namemovie = localStorage.getItem("hnxgname1");
+  const viewmovie = localStorage.getItem("hnxgview1");
+const ltmovie = localStorage.getItem("hnxglt1");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hnxgname2(){
+  const postermovie = localStorage.getItem("hnxgimg2");
+  const namemovie = localStorage.getItem("hnxgname2");
+  const viewmovie = localStorage.getItem("hnxgview2");
+const ltmovie = localStorage.getItem("hnxglt2");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hnxgname3(){
+  const postermovie = localStorage.getItem("hnxgimg3");
+  const namemovie = localStorage.getItem("hnxgname3");
+  const viewmovie = localStorage.getItem("hnxgview3");
+const ltmovie = localStorage.getItem("hnxglt3");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hnxgname4(){
+  const postermovie = localStorage.getItem("hnxgimg4");
+  const namemovie = localStorage.getItem("hnxgname4");
+  const viewmovie = localStorage.getItem("hnxgview4");
+const ltmovie = localStorage.getItem("hnxglt4");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hnxgname5(){
+  const postermovie = localStorage.getItem("hnxgimg5");
+  const namemovie = localStorage.getItem("hnxgname5");
+  const viewmovie = localStorage.getItem("hnxgview5");
+const ltmovie = localStorage.getItem("hnxglt5");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+function hnxgname6(){
+  const postermovie = localStorage.getItem("hnxgimg6");
+  const namemovie = localStorage.getItem("hnxgname6");
+  const viewmovie = localStorage.getItem("hnxgview6");
+const ltmovie = localStorage.getItem("hnxglt6");
+    
+    localStorage.setItem("postermovie",postermovie);
+      localStorage.setItem("namemovie",namemovie);
+      localStorage.setItem("viewmovie",viewmovie);
+      localStorage.setItem("ltmovie",ltmovie);
+location.href = "movie.html";
+}
+ 
+ 
+
+function copy(){
+//  var copyTextarea = document.querySelector('.js-copytextarea');
+let textarea = document.getElementById("textarea");
+textarea.select();
+  document.execCommand("copy");
+}
+    </script>
+ </body>
+</html>
